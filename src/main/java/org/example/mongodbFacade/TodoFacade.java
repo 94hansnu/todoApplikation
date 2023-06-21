@@ -1,2 +1,4 @@
-package org.example.mongodbFacade;public class TodoFacade {
+package org.example.mongodbFacade;
+
+public class TodoFacade {
 }

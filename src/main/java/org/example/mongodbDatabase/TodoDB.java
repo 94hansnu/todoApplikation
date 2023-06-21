@@ -1,2 +1,4 @@
-package org.example.mongodbDatabase;public class TodoDB {
+package org.example.mongodbDatabase;
+
+public class TodoDB {
 }

@@ -1,2 +1,4 @@
-package org.example.helper;public class Menu {
+package org.example.helper;
+
+public class Menu {
 }
