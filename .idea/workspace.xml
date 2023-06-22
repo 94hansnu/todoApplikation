@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="-">
+    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/TodoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/TodoDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbFacade/TodoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbFacade/TodoFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/UserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/UserDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbFacade/UserFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbFacade/UserFacade.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,26 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.helper.Main" />
+      <module name="todoApplikation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,11 +95,18 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1687385057495</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="--">
+      <created>1687390477568</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1687390477568</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="--" />
+    <option name="LAST_COMMIT_MESSAGE" value="--" />
   </component>
 </project>

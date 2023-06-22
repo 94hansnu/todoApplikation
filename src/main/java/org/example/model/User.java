@@ -12,7 +12,8 @@ public class User {
         this.id = id;
         this.name = name;
         this.age = age;
-        this.todos = todos;
+        this.todos= todos;
+
     }
 
     public String getId() {return id;}
