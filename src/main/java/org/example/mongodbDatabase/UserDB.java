@@ -1,7 +1,5 @@
 package org.example.mongodbDatabase;
 
-import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
@@ -12,13 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDB {
-    MongoClient mongoClient;
-    MongoDatabase database;
-    MongoCollection<Document> collection;
+   private MongoCollection<Document> collection;
 
     public UserDB(){
-        mongoClient = MongoClients.create();
-        database = mongoClient.getDatabase("mongodb://localhost:27017");
+        MongoDatabase database = MongoDBConnection.getInstance().getDatabase();
         collection = database.getCollection("users");
     }
     public void save(User user){

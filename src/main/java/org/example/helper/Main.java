@@ -8,8 +8,9 @@ import org.example.mongodbFacade.UserFacade;
 public class Main {
     public static void main(String[] args) {
 
-        UserDB userDB = new UserDB();
         TodoDB todoDB = new TodoDB();
+        UserDB userDB = new UserDB();
+
 
         UserFacade userFacade = new UserFacade(userDB);
         TodoFacade todoFacade = new TodoFacade(todoDB);

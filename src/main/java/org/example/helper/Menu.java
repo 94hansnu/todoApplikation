@@ -6,6 +6,7 @@ import org.example.mongodbFacade.TodoFacade;
 import org.example.mongodbFacade.UserFacade;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
@@ -41,6 +42,7 @@ public class Menu {
 
             System.out.println("Ange ditt val: ");
             choice = scanner.nextInt();
+            scanner.nextLine();
 
             switch (choice){
                 case 1:
@@ -77,7 +79,8 @@ public class Menu {
                     updateUserName();
                     break;
                 case 12:
-                    System.out.println("Avsluta applikationen");
+                    System.out.println("Du har valt att avsluta applikationen. ");
+                    break;
                 default:
                     System.out.println("Ogiltigt val, försök igen");
             }
@@ -105,7 +108,8 @@ public class Menu {
     }
     private void viewAllTodos() {
         System.out.println("Alla TODO: ");
-        todoFacade.getAllTodos().forEach(System.out::println);
+        List<Todo> todos = todoFacade.getAllTodos();
+        todos.forEach(System.out::println);
     }
     private void viewTodoById() {
         System.out.println("Ange todo-id: ");
@@ -148,9 +152,13 @@ public class Menu {
     private void deleteTodo() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
-
+    try{
         todoFacade.deleteTodo(id);
         System.out.println("Todo raderad!");
+    } catch(IllegalArgumentException e ){
+        System.out.println(e.getMessage());
+    }
+
     }
 
     private void createUser() {
@@ -172,7 +180,8 @@ public class Menu {
 
     private void viewAllUsers() {
         System.out.println("Alla användare: ");
-        userFacade.getAllUsers().forEach(System.out::println);
+        List<User> users = userFacade.getAllUsers();
+        users.forEach(System.out::println);
     }
 
     private void viewUserById() {
@@ -227,6 +236,5 @@ public class Menu {
             System.out.println("Användaren hittades inte. ");
         }
     }
-
 
 }
