@@ -23,27 +23,10 @@ public class Menu {
         System.out.println("Välkommen till Todo applikationen");
         System.out.println("---------------------------------");
 
-        int choice = 0;
+        int choice;
         do {
-
-            System.out.println("\nVälj en handling:");
-            System.out.println("1. Skapa ny TODO");
-            System.out.println("2. Visa alla TODO");
-            System.out.println("3. Visa en enskild TODO");
-            System.out.println("4. Uppdatera en TODO");
-            System.out.println("5. Uppdatera om en todo är klar eller inte");
-            System.out.println("6. Ta bort en TODO");
-            System.out.println("7. Skapa en användare");
-            System.out.println("8. Visa alla användare");
-            System.out.println("9. Visa en enskild användare");
-            System.out.println("10. Uppdatera en användare");
-            System.out.println("11. Uppdatera användarnamn");
-            System.out.println("12. Avsluta");
-
-            System.out.println("Ange ditt val: ");
-            choice = scanner.nextInt();
-            scanner.nextLine();
-
+            printMenuOptions();
+            choice = getUserChoice();
             switch (choice){
                 case 1:
                     createTodo();
@@ -79,15 +62,45 @@ public class Menu {
                     updateUserName();
                     break;
                 case 12:
+                    deleteUser();
+                    break;
+                case 13:
                     System.out.println("Du har valt att avsluta applikationen. ");
                     break;
                 default:
                     System.out.println("Ogiltigt val, försök igen");
             }
-        } while (choice != 12);
+        } while (choice != 13);
     }
+    private void printMenuOptions(){
+        System.out.println("\nVälj en handling:");
+        System.out.println("1. Skapa ny TODO");
+        System.out.println("2. Visa alla TODO");
+        System.out.println("3. Visa en enskild TODO");
+        System.out.println("4. Uppdatera en TODO");
+        System.out.println("5. Uppdatera om en todo är klar eller inte");
+        System.out.println("6. Ta bort en TODO");
+        System.out.println("7. Skapa en användare");
+        System.out.println("8. Visa alla användare");
+        System.out.println("9. Visa en enskild användare");
+        System.out.println("10. Uppdatera en användare");
+        System.out.println("11. Uppdatera användarnamn");
+        System.out.println("12. Ta bort en användare");
+        System.out.println("13. Avsluta");
 
-
+        System.out.println("Ange ditt val: ");
+    }
+    private int getUserChoice(){
+        int choice;
+        while (true){
+            try {
+                choice = Integer.parseInt(scanner.nextLine());
+                break;
+            }catch (NumberFormatException e){
+                System.out.println("Ogiltigt val, försök igen! ");
+            }
+        } return choice;
+    }
 
     private void createTodo() {
         System.out.println("Ange todo-id: ");
@@ -237,4 +250,15 @@ public class Menu {
         }
     }
 
+    private void deleteUser() {
+        System.out.println("Ange användar-id: ");
+        String id = scanner.nextLine();
+
+        try {
+            userFacade.deleteUser(id);
+            System.out.println("Användare raderad! ");
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }

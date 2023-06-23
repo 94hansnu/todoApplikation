@@ -28,4 +28,8 @@ public class MongoDBConnection {
     public MongoDatabase getDatabase(){
         return database;
     }
+
+    public void close(){
+        mongoClient.close();
+    }
 }

@@ -2,6 +2,7 @@ package org.example.mongodbDatabase;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.result.DeleteResult;
 import org.bson.Document;
 import org.example.model.Todo;
 import org.example.model.User;
@@ -57,7 +58,12 @@ public class UserDB {
     }
     public void delete(String id){
         Document query = new Document("id", id);
-        collection.deleteOne(query);
+        DeleteResult result = collection.deleteOne(query);
+        if (result.getDeletedCount() == 0){
+            throw new IllegalArgumentException("Ingen användare hittades med det angivna id:t.");
+        }else {
+            System.out.println("Användaren raderad! ");
+        }
     }
     private List<Document> convertToTodoDocuments(List<Todo> todos){
         List<Document> todoDocuments = new ArrayList<>();

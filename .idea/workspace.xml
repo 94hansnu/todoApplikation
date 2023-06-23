@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- UserFacade testad">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/mongodbFacade/TodoFacadeTest.java" afterDir="false" />
+    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- TodoFacade testad">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/MongoDBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/MongoDBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/UserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/UserDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,58 +72,72 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.mongodbDatabase" />
       <recent name="org.example.mongodbFacade" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TodoFacadeTest">
-    <configuration name="TodoFacadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserFacadeTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.helper.Main" />
       <module name="todoApplikation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.mongodbFacade.*" />
+          <option name="PATTERN" value="org.example.helper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoDBConnectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todoApplikation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.mongodbDatabase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.mongodbDatabase" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mongodbDatabase.MongoDBConnectionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TodoFacadeTest.deleteTodo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MongoDBConnectionTest.close" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todoApplikation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.mongodbFacade.*" />
+          <option name="PATTERN" value="org.example.mongodbDatabase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
-      <option name="METHOD_NAME" value="deleteTodo" />
+      <option name="PACKAGE_NAME" value="org.example.mongodbDatabase" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mongodbDatabase.MongoDBConnectionTest" />
+      <option name="METHOD_NAME" value="close" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TodoFacadeTest.getAllTodos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MongoDBConnectionTest.getDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todoApplikation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.mongodbFacade.*" />
+          <option name="PATTERN" value="org.example.mongodbDatabase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
-      <option name="METHOD_NAME" value="getAllTodos" />
+      <option name="PACKAGE_NAME" value="org.example.mongodbDatabase" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mongodbDatabase.MongoDBConnectionTest" />
+      <option name="METHOD_NAME" value="getDatabase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TodoFacadeTest.updateTodoStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserFacadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todoApplikation" />
       <extension name="coverage">
         <pattern>
@@ -129,36 +146,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
-      <option name="METHOD_NAME" value="updateTodoStatus" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TodoFacadeTest.updateTodoText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="todoApplikation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.mongodbFacade.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
-      <option name="METHOD_NAME" value="updateTodoText" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.UserFacadeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TodoFacadeTest" />
-        <item itemvalue="JUnit.TodoFacadeTest.deleteTodo" />
-        <item itemvalue="JUnit.TodoFacadeTest.updateTodoStatus" />
-        <item itemvalue="JUnit.TodoFacadeTest.updateTodoText" />
-        <item itemvalue="JUnit.TodoFacadeTest.getAllTodos" />
+        <item itemvalue="JUnit.UserFacadeTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MongoDBConnectionTest.getDatabase" />
+        <item itemvalue="JUnit.MongoDBConnectionTest" />
+        <item itemvalue="JUnit.MongoDBConnectionTest.close" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +201,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1687471982854</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="--- TodoFacade testad">
+      <created>1687557745602</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1687557745602</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,6 +216,7 @@
     <MESSAGE value="--- lite huvudvärk kvar" />
     <MESSAGE value="--- pomxml fixad" />
     <MESSAGE value="--- UserFacade testad" />
-    <option name="LAST_COMMIT_MESSAGE" value="--- UserFacade testad" />
+    <MESSAGE value="--- TodoFacade testad" />
+    <option name="LAST_COMMIT_MESSAGE" value="--- TodoFacade testad" />
   </component>
 </project>
