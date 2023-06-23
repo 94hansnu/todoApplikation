@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- pomxml fixad">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/mongodbFacade/UserFacadeTest.java" afterDir="false" />
+    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- UserFacade testad">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/mongodbFacade/TodoFacadeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +72,8 @@
       <recent name="org.example.mongodbFacade" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserFacadeTest">
-    <configuration name="UserFacadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TodoFacadeTest">
+    <configuration name="TodoFacadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todoApplikation" />
       <extension name="coverage">
         <pattern>
@@ -82,13 +82,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.UserFacadeTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserFacadeTest.getUserById_existId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TodoFacadeTest.deleteTodo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todoApplikation" />
       <extension name="coverage">
         <pattern>
@@ -97,14 +97,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.UserFacadeTest" />
-      <option name="METHOD_NAME" value="getUserById_existId" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
+      <option name="METHOD_NAME" value="deleteTodo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserFacadeTest.getUserById_notExistId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TodoFacadeTest.getAllTodos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todoApplikation" />
       <extension name="coverage">
         <pattern>
@@ -113,14 +113,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.UserFacadeTest" />
-      <option name="METHOD_NAME" value="getUserById_notExistId" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
+      <option name="METHOD_NAME" value="getAllTodos" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserFacadeTest.updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TodoFacadeTest.updateTodoStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todoApplikation" />
       <extension name="coverage">
         <pattern>
@@ -129,14 +129,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.UserFacadeTest" />
-      <option name="METHOD_NAME" value="updateUser" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
+      <option name="METHOD_NAME" value="updateTodoStatus" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserFacadeTest.updateUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TodoFacadeTest.updateTodoText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todoApplikation" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +145,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.mongodbFacade" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.UserFacadeTest" />
-      <option name="METHOD_NAME" value="updateUserName" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mongodbFacade.TodoFacadeTest" />
+      <option name="METHOD_NAME" value="updateTodoText" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserFacadeTest" />
-        <item itemvalue="JUnit.UserFacadeTest.updateUserName" />
-        <item itemvalue="JUnit.UserFacadeTest.updateUser" />
-        <item itemvalue="JUnit.UserFacadeTest.getUserById_notExistId" />
-        <item itemvalue="JUnit.UserFacadeTest.getUserById_existId" />
+        <item itemvalue="JUnit.TodoFacadeTest" />
+        <item itemvalue="JUnit.TodoFacadeTest.deleteTodo" />
+        <item itemvalue="JUnit.TodoFacadeTest.updateTodoStatus" />
+        <item itemvalue="JUnit.TodoFacadeTest.updateTodoText" />
+        <item itemvalue="JUnit.TodoFacadeTest.getAllTodos" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +195,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1687469219126</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="--- UserFacade testad">
+      <created>1687471982854</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1687471982854</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +209,7 @@
     <MESSAGE value="--" />
     <MESSAGE value="--- lite huvudvärk kvar" />
     <MESSAGE value="--- pomxml fixad" />
-    <option name="LAST_COMMIT_MESSAGE" value="--- pomxml fixad" />
+    <MESSAGE value="--- UserFacade testad" />
+    <option name="LAST_COMMIT_MESSAGE" value="--- UserFacade testad" />
   </component>
 </project>
