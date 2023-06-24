@@ -72,7 +72,7 @@ public class Menu {
             }
         } while (choice != 13);
     }
-    private void printMenuOptions(){
+    public void printMenuOptions(){
         System.out.println("\nVälj en handling:");
         System.out.println("1. Skapa ny TODO");
         System.out.println("2. Visa alla TODO");
@@ -90,7 +90,7 @@ public class Menu {
 
         System.out.println("Ange ditt val: ");
     }
-    private int getUserChoice(){
+    public int getUserChoice(){
         int choice;
         while (true){
             try {
@@ -102,7 +102,7 @@ public class Menu {
         } return choice;
     }
 
-    private void createTodo() {
+    public void createTodo() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
 
@@ -119,12 +119,12 @@ public class Menu {
         todoFacade.createTodo(todo);
         System.out.println("TODO skapad! ");
     }
-    private void viewAllTodos() {
+    public void viewAllTodos() {
         System.out.println("Alla TODO: ");
         List<Todo> todos = todoFacade.getAllTodos();
         todos.forEach(System.out::println);
     }
-    private void viewTodoById() {
+    public void viewTodoById() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
 
@@ -136,7 +136,7 @@ public class Menu {
         }
     }
 
-    private void updateTodo() {
+    public void updateTodo() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
 
@@ -152,7 +152,7 @@ public class Menu {
             System.out.println("Ingen Todo hittades med det angivna id:t. ");
         }
     }
-    private void updateTodoStatus() {
+    public void updateTodoStatus() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
         System.out.println("Är todo klar (ja/nej): ");
@@ -162,7 +162,7 @@ public class Menu {
         System.out.println("Todo status uppdaterad");
     }
 
-    private void deleteTodo() {
+    public void deleteTodo() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
     try{
@@ -174,7 +174,7 @@ public class Menu {
 
     }
 
-    private void createUser() {
+    public void createUser() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
 
@@ -191,13 +191,13 @@ public class Menu {
         System.out.println("Användare skapad! ");
     }
 
-    private void viewAllUsers() {
+    public void viewAllUsers() {
         System.out.println("Alla användare: ");
         List<User> users = userFacade.getAllUsers();
         users.forEach(System.out::println);
     }
 
-    private void viewUserById() {
+    public void viewUserById() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
 
@@ -209,7 +209,7 @@ public class Menu {
         }
     }
 
-    private void updateUser() {
+    public void updateUser() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
 
@@ -233,7 +233,7 @@ public class Menu {
         }
     }
 
-    private void updateUserName() {
+    public void updateUserName() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
 
@@ -250,7 +250,7 @@ public class Menu {
         }
     }
 
-    private void deleteUser() {
+    public void deleteUser() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
 

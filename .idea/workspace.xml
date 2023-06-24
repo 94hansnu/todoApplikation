@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- TodoFacade testad">
+    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- lite uppdateringar i klasserna">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/MongoDBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/MongoDBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/UserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/UserDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,7 +59,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.43678162",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
@@ -76,7 +74,7 @@
       <recent name="org.example.mongodbFacade" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserFacadeTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.helper.Main" />
       <module name="todoApplikation" />
@@ -154,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserFacadeTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserFacadeTest" />
         <item itemvalue="JUnit.MongoDBConnectionTest.getDatabase" />
         <item itemvalue="JUnit.MongoDBConnectionTest" />
         <item itemvalue="JUnit.MongoDBConnectionTest.close" />
@@ -207,7 +205,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1687557745602</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="--- lite uppdateringar i klasserna">
+      <created>1687564768256</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1687564768257</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -217,6 +221,7 @@
     <MESSAGE value="--- pomxml fixad" />
     <MESSAGE value="--- UserFacade testad" />
     <MESSAGE value="--- TodoFacade testad" />
-    <option name="LAST_COMMIT_MESSAGE" value="--- TodoFacade testad" />
+    <MESSAGE value="--- lite uppdateringar i klasserna" />
+    <option name="LAST_COMMIT_MESSAGE" value="--- lite uppdateringar i klasserna" />
   </component>
 </project>
