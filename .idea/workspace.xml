@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- lite uppdateringar i klasserna">
+    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- kommentar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Todo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/MongoDBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/MongoDBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/TodoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/TodoDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/UserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/UserDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbFacade/TodoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbFacade/TodoFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbFacade/UserFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbFacade/UserFacade.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +224,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1687649505638</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="--- kommentar">
+      <created>1687727282635</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1687727282635</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,6 +241,7 @@
     <MESSAGE value="--- UserFacade testad" />
     <MESSAGE value="--- TodoFacade testad" />
     <MESSAGE value="--- lite uppdateringar i klasserna" />
-    <option name="LAST_COMMIT_MESSAGE" value="--- lite uppdateringar i klasserna" />
+    <MESSAGE value="--- kommentar" />
+    <option name="LAST_COMMIT_MESSAGE" value="--- kommentar" />
   </component>
 </project>

@@ -6,7 +6,7 @@ package org.example.model;
 public class Todo {
     /**
      * Här deklareras instansvariablerna i klassen, id representerar ID:t för att göra-uppgiften,
-     * text innehåller skälva texten för uppgiften, done är en boolesk variabel som anger om uppgiften
+     * text innehåller själva texten för uppgiften, done är en boolesk variabel som anger om uppgiften
      * är klar eller inte och assignedTo innehåller namnet på personen som uppgiften är tilldelas till.
      */
     private String id;

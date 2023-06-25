@@ -9,6 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Klassen Menu hanterar användargränssnittet för en Todo-applikation. Den har referenser till UserFacade och TodoFacade
+ * för att utföra operationer på användare och todo-objekt. Dessutom används en Scanner för att läsa inmatning
+ * från användaren.
+ */
 public class Menu {
     UserFacade userFacade;
     TodoFacade todoFacade;
@@ -19,6 +24,12 @@ public class Menu {
         this.todoFacade= todoFacade;
         this.scanner = new Scanner(System.in);
     }
+
+    /**
+     * Metoden displayMenu visar huvudmenyn för Todo-applikationen och låter användaren välja olika handlingar.
+     * Det använder en loop för att kontinuerligt visa menyn tills användaren väljer att avsluta applikationen genom att
+     * ange 13.
+     */
     public void displayMenu(){
         System.out.println("Välkommen till Todo applikationen");
         System.out.println("---------------------------------");
@@ -72,6 +83,10 @@ public class Menu {
             }
         } while (choice != 13);
     }
+
+    /**
+     * Metoden printMenuOptions skriver ut alla tillgängliga handlingar som användaren kan välja från menyn.
+     */
     public void printMenuOptions(){
         System.out.println("\nVälj en handling:");
         System.out.println("1. Skapa ny TODO");
@@ -90,6 +105,12 @@ public class Menu {
 
         System.out.println("Ange ditt val: ");
     }
+
+    /**
+     * Metoden läser in användarens val från inmatningen och returnerar det som en heltalsvärde. Om användaren anger
+     * ogiltig inmatning fångas NumberFormatException och användaren uppmanas att försöka igen.
+     * @return
+     */
     public int getUserChoice(){
         int choice;
         while (true){
@@ -102,6 +123,10 @@ public class Menu {
         } return choice;
     }
 
+    /**
+     * Metoden låter användaren ange information om en ny todo och skapar sedan en Todo-instans med den angivna
+     * informationen. Sedan används todoFacade för att skapa todo-objektet i databasen
+     */
     public void createTodo() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
@@ -119,11 +144,22 @@ public class Menu {
         todoFacade.createTodo(todo);
         System.out.println("TODO skapad! ");
     }
+
+    /**
+     * Metoden hämtar och visar alla tillgängliga todo-objekt från databasen genom att använda todoFacade-metoden
+     * getAllTodos. Varje todo-objekt skrivs ut på en ny rad.
+     */
     public void viewAllTodos() {
         System.out.println("Alla TODO: ");
         List<Todo> todos = todoFacade.getAllTodos();
         todos.forEach(System.out::println);
     }
+
+    /**
+     * Metoden låter användaren ange ett todo-id och hämtar sedan motsvarande todo-objekt från databasen genom att
+     * använda todoFacade-metoden getTodoById. Om ett todo-objekt hittas skrivs det ut, annars skrivs ett meddelande
+     * ut att ingen todo hittades.
+     */
     public void viewTodoById() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
@@ -136,6 +172,12 @@ public class Menu {
         }
     }
 
+    /**
+     * Metoden låter användaren ange ett todo-id och hämtar sedan det motsvarande todo-objektet från databasen genom att
+     * använda todoFacade-metoden getTodoById. Om todo-objektet finns kan användaren ange en ny text för todo och sedan
+     * uppdateras todo-objektet i databasen med den nya texten genom att använda todoFacade-metoden updateTodoText.
+     * Annars skrivs ett meddelande ut att ingen todo hittades.
+     */
     public void updateTodo() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
@@ -152,6 +194,13 @@ public class Menu {
             System.out.println("Ingen Todo hittades med det angivna id:t. ");
         }
     }
+
+    /**
+     * Metoden låter användaren ange ett todo-id och sedan om todo är klar eller inte genom att ange "ja" eller "nej".
+     * Beroende på användarens inmatning används todoFacade för att uppdatera statusen för det angivna todo-objektet i
+     * databasen genom att använda metoden updateTodoStatus. Ett meddelande skrivs ut för att bekräfta att statusen har
+     * uppdaterats.
+     */
     public void updateTodoStatus() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
@@ -162,6 +211,11 @@ public class Menu {
         System.out.println("Todo status uppdaterad");
     }
 
+    /**
+     * Metoden låter användaren ange ett todo-id och försöker sedan radera det motsvarande todo-objektet från databasen
+     * genom att använda todoFacade-metoden deleteTodo. Om ett ogiltigt todo-id anges fångas IllegalArgumentException
+     * och ett felmeddelande skrivs ut.
+     */
     public void deleteTodo() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
@@ -174,6 +228,10 @@ public class Menu {
 
     }
 
+    /**
+     * Metoden låter användaren ange information om en ny användare och skapar sedan en User-instans med den angivna
+     * informationen. Sedan används userFacade för att skapa användarobjektet i databasen.
+     */
     public void createUser() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
@@ -191,12 +249,21 @@ public class Menu {
         System.out.println("Användare skapad! ");
     }
 
+    /**
+     * Metoden hämtar och visar alla tillgängliga användarobjekt från databasen genom att använda userFacade-metoden
+     * getAllUsers. Varje användarobjekt skrivs ut på en ny rad.
+     */
     public void viewAllUsers() {
         System.out.println("Alla användare: ");
         List<User> users = userFacade.getAllUsers();
         users.forEach(System.out::println);
     }
 
+    /**
+     * Metoden låter användaren ange ett användar-id och hämtar sedan det motsvarande användarobjektet från databasen
+     * genom att använda userFacade-metoden getUserById. Om ett användarobjekt hittas skrivs det ut, annars skrivs ett
+     * meddelande ut att ingen användare hittades.
+     */
     public void viewUserById() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
@@ -209,6 +276,12 @@ public class Menu {
         }
     }
 
+    /**
+     * Metoden låter användaren ange ett användar-id och hämtar sedan det motsvarande användarobjektet från databasen
+     * genom att använda userFacade-metoden getUserById. Om användarobjektet finns kan användaren ange ett nytt namn och
+     * en ny ålder för användaren. Därefter uppdateras användarobjektet i databasen med det nya namnet och åldern genom
+     * att använda userFacade-metoden updateUser. Annars skrivs ett meddelande ut att ingen användare hittades.
+     */
     public void updateUser() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
@@ -233,6 +306,12 @@ public class Menu {
         }
     }
 
+    /**
+     * Metoden låter användaren ange ett användar-id och hämtar sedan det motsvarande användarobjektet från databasen
+     * genom att använda userFacade-metoden getUserById. Om användarobjektet finns kan användaren ange ett nytt namn för
+     * användaren. Därefter uppdateras användarnamnet för användarobjektet i databasen genom att använda
+     * userFacade-metoden updateUserName. Annars skrivs ett meddelande ut att ingen användare hittades.
+     */
     public void updateUserName() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
@@ -250,6 +329,11 @@ public class Menu {
         }
     }
 
+    /**
+     * Metoden låter användaren ange ett användar-id och försöker sedan radera det motsvarande användarobjektet från
+     * databasen genom att använda userFacade-metoden deleteUser. Om ett ogiltigt användar-id anges fångas
+     * IllegalArgumentException och ett felmeddelande skrivs ut.
+     */
     public void deleteUser() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
