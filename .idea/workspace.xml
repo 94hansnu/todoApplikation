@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- kommentarer, testerna kvar, pom fil uppdaterad">
+    <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- fixade lite">
+      <change afterPath="$PROJECT_DIR$/TodoDokumentation.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -39,6 +42,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2RX14j9tLj4JaWqskWpMVMAZUnn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Downloaded.Files.Path.Enabled": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "true",
@@ -253,7 +260,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1687783011310</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="--- fixade lite">
+      <created>1687807613134</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1687807613134</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -267,6 +280,7 @@
     <MESSAGE value="--- kommentar" />
     <MESSAGE value="--- kommentarer, testerna kvar" />
     <MESSAGE value="--- kommentarer, testerna kvar, pom fil uppdaterad" />
-    <option name="LAST_COMMIT_MESSAGE" value="--- kommentarer, testerna kvar, pom fil uppdaterad" />
+    <MESSAGE value="--- fixade lite" />
+    <option name="LAST_COMMIT_MESSAGE" value="--- fixade lite" />
   </component>
 </project>
