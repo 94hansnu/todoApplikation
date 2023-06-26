@@ -130,6 +130,9 @@ public class Menu {
     public void createTodo() {
         System.out.println("Ange todo-id: ");
         String id = scanner.nextLine();
+        while (todoFacade.getTodoById(id)!= null){
+            System.out.println("Todo-id finns redan. Vänligen ange ett annat ID:");
+            id = scanner.nextLine();}
 
         System.out.println("Ange text: ");
         String text = scanner.nextLine();
@@ -315,6 +318,7 @@ public class Menu {
     public void updateUserName() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
+
 
         System.out.println("Ange det nya namnet: ");
         String newName = scanner.nextLine();
