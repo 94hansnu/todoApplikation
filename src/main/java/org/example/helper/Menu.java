@@ -238,6 +238,9 @@ public class Menu {
     public void createUser() {
         System.out.println("Ange användar-id: ");
         String id = scanner.nextLine();
+        while (userFacade.getUserById(id)!= null){
+            System.out.println("Användar-id finns redan. Vänligen ange ett annat ID:");
+            id = scanner.nextLine();}
 
         System.out.println("Ange namn:");
         String name = scanner.nextLine();

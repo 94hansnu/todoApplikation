@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b16ea05b-0eda-472b-8e6a-afb28d58c763" name="Changes" comment="--- kommentarer, testerna kvar, pom fil uppdaterad">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/mongodbDatabase/MongoDBConnectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/MongoDBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mongodbDatabase/MongoDBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/mongodbFacade/TodoFacadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/mongodbFacade/TodoFacadeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <recent name="org.example.mongodbFacade" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MongoDBConnectionTest.close">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.helper.Main" />
       <module name="todoApplikation" />
@@ -155,10 +152,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MongoDBConnectionTest.close" />
         <item itemvalue="JUnit.MongoDBConnectionTest.getDatabase" />
         <item itemvalue="JUnit.MongoDBConnectionTest.getInstance" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserFacadeTest" />
       </list>
     </recent_temporary>
@@ -250,7 +247,13 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1687775894710</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="--- kommentarer, testerna kvar, pom fil uppdaterad">
+      <created>1687783011310</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1687783011310</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
