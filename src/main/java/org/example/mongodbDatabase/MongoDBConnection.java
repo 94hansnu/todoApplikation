@@ -21,21 +21,21 @@ public class MongoDBConnection {
     private static final String DATABASE_NAME= "todoApplikation";
 
     /**
-     * Här deklareras privata instansvariabler, instance är en instansvariabel av typen MongoDBConnection
+     * Här deklareras instansvariabler, instance är en instansvariabel av typen MongoDBConnection
      * och används för att hålla en enda instans av anslutningsobjektet. mongoClient är en instansvariabel
      * av typen MongoClient som används för att hantera anslutningen till MongoDB-servern. database är en
      * instansvariabel av typen MongoDatabase som representerar själva databasen
      */
     private static MongoDBConnection instance;
-    private MongoClient mongoClient;
-    private MongoDatabase database;
+    MongoClient mongoClient;
+    MongoDatabase database;
 
     /**
      * Detta är konstruktorn för klassen MongoDBConnection och skapar anslutningen till MongoDB-databasen
      * genom att skapa anslutningssträng baserad på namn och portnummer. Sedan skapas en instans av MongoClient
      * med hjälp av anslutningssträngen och instansen av MongoDatabase hämtas från klienten baserat på databasnamnet
      */
-    private MongoDBConnection(){
+    MongoDBConnection(){
         String connectionString = String.format("mongodb://%s:%d", DATABASE_HOST, DATABASE_PORT);
         mongoClient = MongoClients.create(connectionString);
         database = mongoClient.getDatabase(DATABASE_NAME);

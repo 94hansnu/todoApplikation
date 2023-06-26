@@ -16,16 +16,27 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Mockito.*;
 
 class TodoFacadeTest {
+    /**
+     * @Mock används för att skapa ett mock-objekt för TodoDB. Detta gör det möjligt att simulera beteendet hos TodoDB
+     * under testningen.
+     */
     @Mock
     private TodoDB todoDB;
     private TodoFacade todoFacade;
 
+    /**
+     * metoden körs före varje enskild testmetod och skapar en instans av TodoFacade-klassen med mock-objektet todoDB.
+     */
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
         todoFacade = new TodoFacade(todoDB);
     }
 
+    /**
+     * I createTodo()-metoden skapas ett Todo-objekt och används som argument för createTodo()-metoden i todoFacade.
+     * Mock-objektet todoDB förväntas att save()-metoden anropas exakt en gång med todo som argument.
+     */
     @Test
     void createTodo() {
         Todo todo = new Todo("1", "Bada", false, "Hanadi");
@@ -37,6 +48,11 @@ class TodoFacadeTest {
         Mockito.verify(todoDB,times(1)).save(todo);
     }
 
+    /**
+     * I getTodoById_exist()-metoden testas scenariot när ett Todo-objekt finns med det givna todoId. Mock-objektet
+     * todoDB förväntas att findById()-metoden anropas exakt en gång med todoId som argument och returnerar expectedTodo.
+     * Det kontrolleras också om getTodoById()-metoden i todoFacade returnerar samma Todo-objekt som förväntat.
+     */
     @Test
     void getTodoById_exist() {
         String todoId = "1";
@@ -51,6 +67,11 @@ class TodoFacadeTest {
         assertEquals(expectedTodo, resultTodo);
     }
 
+    /**
+     * I getTodoById_notExist()-metoden testas scenariot när inget Todo-objekt finns med det givna todoId. Mock-objektet
+     * todoDB förväntas att findById()-metoden anropas exakt en gång med todoId som argument och returnerar null.
+     * Det kontrolleras också om getTodoById()-metoden i todoFacade returnerar null.
+     */
     @Test
     void getTodoById_notExist(){
         String todoId = "1";
@@ -64,6 +85,11 @@ class TodoFacadeTest {
         assertNull(resultTodo);
     }
 
+    /**
+     * I getAllTodos()-metoden förväntas findAll()-metoden på mock-objektet todoDB anropas exakt en gång och returnera
+     * expectedTodos. Det kontrolleras också om getAllTodos()-metoden i todoFacade returnerar samma lista med
+     * Todo-objekt som förväntat.
+     */
     @Test
     void getAllTodos() {
         List<Todo> expectedTodos = new ArrayList<>();
@@ -79,6 +105,11 @@ class TodoFacadeTest {
         assertEquals(expectedTodos, resultTodo);
     }
 
+    /**
+     * I updateTodoText()-metoden förväntas findById()-metoden på mock-objektet todoDB anropas exakt en gång med todoId
+     * som argument och returnera todo. Sedan uppdateras texten för todo och update()-metoden på todoDB anropas också
+     * exakt en gång med todo som argument. Det kontrolleras också om texten i todo har uppdaterats korrekt.
+     */
     @Test
     void updateTodoText() {
         String todoId = "1";
@@ -96,6 +127,11 @@ class TodoFacadeTest {
         Mockito.verify(todoDB, times(1)).update(todo);
     }
 
+    /**
+     * I updateTodoStatus()-metoden förväntas findById()-metoden på mock-objektet todoDB anropas exakt en gång med
+     * todoId som argument och returnera todo. Sedan uppdateras statusen för todo och update()-metoden på todoDB
+     * anropas också exakt en gång med todo som argument. Det kontrolleras också om statusen i todo har uppdaterats korrekt.
+     */
     @Test
     void updateTodoStatus() {
         String todoId = "1";
@@ -113,6 +149,10 @@ class TodoFacadeTest {
         Mockito.verify(todoDB, times(1)).update(todo);
     }
 
+    /**
+     * I deleteTodo()-metoden förväntas delete()-metoden på mock-objektet todoDB anropas exakt en gång med todoId
+     * som argument.
+     */
     @Test
     void deleteTodo() {
         String todoId = "1";
